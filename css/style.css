@@ -145,6 +145,12 @@ header img{
 .img-nosotros img{
     width: 100%;
     border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.img-scania img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 /* Main productos */
@@ -175,6 +181,34 @@ header img{
     text-align: center;
 }
 
+.slider{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 300px);
+    margin: 3rem 3rem;
+    gap: 1rem;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.Precio{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.Precio button{
+    border-radius: 20px;
+    color: red;
+    padding: 8px 22px;
+    background-color: #343a40;
+    transition: all 0.2s ease;
+}
 
 /* Main servicios */
 
@@ -190,9 +224,12 @@ header img{
     padding: 15px;
 }
 
-.packaging img{
-    width: 350px;
-    height: 350px;
+.fin-servicio img{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 250px;
+    margin: auto;
+    border-radius: 20px;
 }
 
 .alineacion-reparacion{
@@ -202,8 +239,8 @@ header img{
 
 .fin-servicio{
     text-align: center;
+    width: 100%;
 }
-
 
 
 /* Main contacto */
@@ -211,7 +248,7 @@ header img{
 .container-form{
     width: 100%;
     max-width: 1100px;
-    /* margin: auto; */
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
@@ -270,6 +307,13 @@ header img{
     background: #e39403;
 }
 
+.map{
+    padding: 20px;
+}
+
+.map h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Footer */
 
@@ -297,11 +341,9 @@ header img{
 }
 
 /* Media queries */
-@media (max-width: 991px){
-    .menu{
-        position: absolute;
-        width: 100%;
-        top: 150px;
-        background-color: #343a40;
+
+@media screen and (max-width: 650px){
+    .header{
+        background-color: gray;
     }
 }
