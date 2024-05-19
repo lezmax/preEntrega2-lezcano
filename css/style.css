@@ -1,9 +1,11 @@
 /* styles */
-*{
+
+/* reset */
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+} */
 
 h1{ 
     /* Poppins Medium */
